@@ -25,7 +25,7 @@ export class AddUtilisateurComponent {
     if (this.utilisateurForm.valid) {
       this.utilisateurService.addUtilisateur(this.utilisateurForm.value).subscribe({
         next: () => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/utilisateurs']);
         },
         error: (err) => {
           alert('Erreur lors de la création de l\'utilisateur: ' + err.message);

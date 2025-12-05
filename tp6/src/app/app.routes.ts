@@ -5,6 +5,7 @@ import { AddPollutionComponent } from './add-pollution/add-pollution.component';
 import { EditPollutionComponent } from './edit-pollution/edit-pollution.component';
 import { AddUtilisateurComponent } from './add-utilisateur/add-utilisateur.component';
 import { ListeUtilisateursComponent } from './liste-utilisateurs/liste-utilisateurs.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'pollutions', pathMatch: 'full' },
@@ -13,5 +14,7 @@ export const routes: Routes = [
     { path: 'pollutions/:id', component: DetailsPollutionComponent },
     { path: 'pollutions/edit/:id', component: EditPollutionComponent },
     { path: 'utilisateurs/add', component: AddUtilisateurComponent },
-    { path: 'utilisateurs', component: ListeUtilisateursComponent }
+    { path: 'utilisateurs', component: ListeUtilisateursComponent },
+    { path: 'login', component: LoginComponent }
+
 ];

@@ -6,6 +6,7 @@ import { UtilisateurService } from '../services/utilisateur.service';
 import { Utilisateur } from '../models/utilisateur.model';
 import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-liste-utilisateurs',
